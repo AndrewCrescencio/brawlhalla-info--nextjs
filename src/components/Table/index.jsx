@@ -9,6 +9,7 @@ import {
 } from "./styles";
 
 export const Table = ({ playersInfo }) => {
+  console.log(playersInfo);
   return (
     <TableContainer>
       <StyledTable>
@@ -29,7 +30,7 @@ export const Table = ({ playersInfo }) => {
               <Tr key={player.rank}>
                 <Td center>{player.rank}</Td>
                 <Td center>{player.region}</Td>
-                <Td>{player.name}</Td>
+                <Td>{player.name ? player.name : player.teamname}</Td>
                 <Td center>{player.tier}</Td>
                 <Td center>
                   {player.wins} - {player.games - player.wins}
