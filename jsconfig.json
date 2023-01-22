@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    // Using "baseUrl" allows you to use absolute paths
+    "baseUrl": ".",
+    // Using "paths" allows you to configure module path aliases
+    "paths": {
+      "@/components/*": ["src/components/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "src/**/**/*.js",
+    "src/**/**/*.jsx"
+  ],
+  "exclude": ["node_modules"]
+}
