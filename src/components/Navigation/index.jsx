@@ -15,7 +15,7 @@ export const Navigation = () => {
         onClick={() =>
           route.push(paginationLink(bracket, region, Number(page) - 1))
         }
-        disabled={page === 1}
+        disabled={page == 1}
       >
         <IconChevronLeft />
       </PaginationButton>
@@ -24,7 +24,7 @@ export const Navigation = () => {
         onClick={() =>
           route.push(paginationLink(bracket, region, Number(page) + 1))
         }
-        disabled={page === 1000}
+        disabled={page == 1000}
       >
         <IconChevronRight />
       </PaginationButton>
