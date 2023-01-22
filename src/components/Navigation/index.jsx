@@ -3,6 +3,7 @@ import { IconChevronLeft } from "../icons/IconChevronLeft";
 import { IconChevronRight } from "../icons/IconChevronRight";
 import { NavigationContainer, PaginationButton } from "./styles";
 import { Popover } from "../Popover";
+import { paginationLink } from "src/helpers/pagination-link";
 
 export const Navigation = () => {
   const route = useRouter();

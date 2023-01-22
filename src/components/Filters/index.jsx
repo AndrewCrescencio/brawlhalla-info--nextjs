@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 
 import { brackets, regions } from "src/common/filters";
+import { paginationLink } from "src/helpers/pagination-link";
 import {
   FilterButton,
   FilterName,
