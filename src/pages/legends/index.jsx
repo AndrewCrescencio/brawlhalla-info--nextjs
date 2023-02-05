@@ -1,16 +1,14 @@
+import { Section } from "@/components/UI/Section";
 import { NextSeo } from "next-seo";
-import { Container, Section } from "../../components/Containers";
 import { LegendsGrid } from "../../components/LegendsGrid";
 
 const PageLegends = ({ data }) => {
   return (
     <>
-      <NextSeo title="Brawlhalla info | Legends" />
-      <Container paddingY="120">
-        <Section>
-          <LegendsGrid legendsData={data} />
-        </Section>
-      </Container>
+      <NextSeo title="Legends" />
+      <Section>
+        <LegendsGrid legendsData={data} />
+      </Section>
     </>
   );
 };

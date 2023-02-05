@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Container } from "../Containers";
+import { Container } from "../UI/Container";
 import { Heading, Title } from "../typography";
 import { Banner, ImageContainer, Wrapper, WrapperText } from "./styles";
 

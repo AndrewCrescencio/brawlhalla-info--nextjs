@@ -4,7 +4,7 @@ import { LegendInfo } from "../../components/LegendInfo";
 const PageLegend = ({ data, legend_image }) => {
   return (
     <>
-      <NextSeo title={`Brawlhalla info | ${data.bio_name}`} />
+      <NextSeo title={`Legend: ${data.bio_name}`} />
       <LegendInfo {...data} legend_image={legend_image} />
     </>
   );
