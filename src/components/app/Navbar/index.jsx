@@ -1,6 +1,6 @@
+import { Container } from "@/components/UI/Container";
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
-import { Container } from "../../Containers";
 import { Navbar, NavbarLink, NavbarWrapper } from "./styles";
 
 const ToggleButton = dynamic(() =>

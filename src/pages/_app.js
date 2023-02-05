@@ -5,7 +5,8 @@ function App({ Component, pageProps }) {
   return (
     <>
       <NextSeo
-        title="Brawlhalla info"
+        titleTemplate="Brawlhalla info | %s"
+        // defaultTitle="Brawlhalla info"
         description="Info about Brawlhalla legends and rankings"
       />
       <AppThemeProvider>
