@@ -6,8 +6,15 @@ function App({ Component, pageProps }) {
     <>
       <NextSeo
         titleTemplate="Brawlhalla info | %s"
-        // defaultTitle="Brawlhalla info"
+        defaultTitle="Brawlhalla info"
         description="Info about Brawlhalla legends and rankings"
+        canonical="https://brawlhalla-info.vercel.app/"
+        openGraph={{
+          type: "website",
+          url: "https://brawlhalla-info.vercel.app/",
+          title: "Brawlhalla Info",
+          description: "Info about Brawlhalla legends and rankings",
+        }}
       />
       <AppThemeProvider>
         <AppLayout>
