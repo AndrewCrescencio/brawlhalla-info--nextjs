@@ -1,20 +1,18 @@
-import { Container, Section } from "@/components/UI/Container";
 import { Navigation } from "@/components/Navigation";
 import { Table } from "@/components/Table";
 import { Title } from "@/components/typography";
+import { Section } from "@/components/UI/Section";
 import { NextSeo } from "next-seo";
 
 const RankingPage = ({ data }) => {
   return (
     <>
       <NextSeo title="Rankings" />
-      <Container>
-        <Section>
-          <Title>Rankings</Title>
-          <Navigation />
-          <Table playersInfo={data} />
-        </Section>
-      </Container>
+      <Section>
+        <Title>Rankings</Title>
+        <Navigation />
+        <Table playersInfo={data} />
+      </Section>
     </>
   );
 };
