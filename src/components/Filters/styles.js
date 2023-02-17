@@ -33,4 +33,5 @@ export const FilterButton = styled.button`
   cursor: pointer;
   background-color: ${({theme})=> theme.colors.buttonBackground};
   border: 1px solid ${({theme})=> theme.colors.buttonBorder};
+  ${(props) => props.selected && `background-color: ${props.theme.colors.buttonSelected} !important;`};
 `;

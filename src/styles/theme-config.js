@@ -12,6 +12,7 @@ export const myTheme = {
     tableThBackground: "var(--table-th-background)",
     tableBackground: "var(--table-background)",
     buttonBackground: "var(--button-background)",
+    buttonSelected: "var(--button-selected)",
     buttonBorder: "var(--button-border)",
   },
 };
@@ -39,6 +40,7 @@ export const GlobalStyles = createGlobalStyle`
    --table-background: #fff;
    --button-background: #fff;
    --button-border: var(--text);
+   --button-selected: rgba(0, 0, 0, 0.3);
   }
   
   [data-theme="dark"] {
@@ -51,6 +53,7 @@ export const GlobalStyles = createGlobalStyle`
     --table-background: #1f222a;
     --button-background: #35383F;
     --button-border: var(--button-background);
+    --button-selected: rgba(255, 255, 255, 0.3);
   }
 
   body {  
