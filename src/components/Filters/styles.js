@@ -32,4 +32,5 @@ export const FilterButton = styled.button`
   height: 48px;
   cursor: pointer;
   background-color: ${({theme})=> theme.colors.buttonBackground};
+  border: 1px solid ${({theme})=> theme.colors.buttonBorder};
 `;
