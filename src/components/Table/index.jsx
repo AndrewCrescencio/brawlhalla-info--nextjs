@@ -1,3 +1,4 @@
+import { Navigation } from "../Navigation";
 import {
   Table as StyledTable,
   TableContainer,
@@ -12,6 +13,7 @@ export const Table = ({ playersInfo }) => {
   console.log(playersInfo);
   return (
     <TableContainer>
+      <Navigation/>
       <StyledTable>
         <THead>
           <Tr>

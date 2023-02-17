@@ -1,4 +1,3 @@
-import { Navigation } from "@/components/Navigation";
 import { Table } from "@/components/Table";
 import { Title } from "@/components/typography";
 import { Section } from "@/components/UI/Section";
@@ -10,7 +9,7 @@ const RankingPage = ({ data }) => {
       <NextSeo title="Rankings" />
       <Section>
         <Title>Rankings</Title>
-        <Navigation />
+        
         <Table playersInfo={data} />
       </Section>
     </>

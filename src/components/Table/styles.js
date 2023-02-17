@@ -1,8 +1,11 @@
 import styled from "styled-components";
 
 export const TableContainer = styled.div`
+  margin-top: 128px;
   overflow-x: auto;
   border-radius: 8px;
+  background-color: ${({ theme }) => theme.colors.tableBackground};
+  border: 1px solid ${({ theme }) => theme.colors.buttonBorder};
 `;
 export const Table = styled.table`
   border: none;
@@ -17,23 +20,19 @@ export const Table = styled.table`
 export const TBody = styled.tbody``;
 
 export const THead = styled.thead`
-  tr {
-    background-color: ${({ theme }) =>
-      theme.colors.tableThBackground} !important;
-  }
+  border-top: 1px solid #35383f;
 `;
 
 export const Tr = styled.tr`
-  &:nth-child(odd) {
-  }
-  &:nth-child(even) {
-    background-color: ${({ theme }) => theme.colors.tableRowBackground};
+  border-bottom: 1px solid #35383f;
+  &:last-of-type {
+    border-bottom: none;
   }
 `;
 
 export const Td = styled.td`
+  padding: 18px 0;
   ${(props) => props.center && "text-align: center !important;"};
-  padding: 12px 16px;
   min-width: 100px;
   &:nth-child(3) {
     min-width: 300px;
@@ -47,5 +46,5 @@ export const Td = styled.td`
 `;
 
 export const Th = styled.th`
-  padding: 12px 16px;
+  padding: 18px 16px;
 `;
