@@ -15,19 +15,19 @@ export const Navigation = () => {
         onClick={() =>
           route.push(paginationLink(bracket, region, Number(page) - 1))
         }
-        disabled={page == 1}
+        disabled={Number(page) === 1}
       >
         <IconChevronLeft />
       </PaginationButton>
-      <Popover />
       <PaginationButton
         onClick={() =>
           route.push(paginationLink(bracket, region, Number(page) + 1))
         }
-        disabled={page == 1000}
+        disabled={Number(page) === 1000}
       >
         <IconChevronRight />
       </PaginationButton>
+      <Popover />
     </NavigationContainer>
   );
 };

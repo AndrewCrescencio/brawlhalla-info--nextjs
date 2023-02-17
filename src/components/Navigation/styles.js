@@ -1,36 +1,17 @@
 import styled from "styled-components";
 
 export const NavigationContainer = styled.div`
-  margin: 48px 0 16px;
-  position: relative;
   display: flex;
-  align-items: flex-end;
+  justify-content: flex-end;
   gap: 16px;
+  margin: 16px;
 `;
 
-export const FilterWrapper = styled.div`
-  display: flex;
-`;
+export const FilterWrapper = styled.div``;
 
-export const FiltersButtonContainer = styled.div`
-  display: flex;
-  margin-top: 16px;
-  flex-wrap: wrap;
-  gap: 8px;
-  height: 100%;
-`;
+export const FiltersButtonContainer = styled.div``;
 
-export const FilterButton = styled.button`
-  cursor: pointer;
-  border-radius: 8px;
-  border: none;
-  padding: 0;
-  display: grid;
-  place-content: center;
-  width: 48px;
-  height: 48px;
-  cursor: pointer;
-`;
+export const FilterButton = styled.button``;
 
 export const PaginationButton = styled.button`
   cursor: pointer;
@@ -41,9 +22,10 @@ export const PaginationButton = styled.button`
   place-content: center;
   width: 48px;
   height: 48px;
+  background-color: ${({theme})=> theme.colors.buttonBackground};
+  border: 1px solid ${({theme})=> theme.colors.buttonBorder};
   cursor: pointer;
-  order: -1;
-  @media (min-width: 768px) {
-    order: 0;
+  &:disabled {
+    cursor: not-allowed;
   }
 `;
