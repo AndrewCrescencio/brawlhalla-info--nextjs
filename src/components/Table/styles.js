@@ -1,11 +1,16 @@
 import styled from "styled-components";
 
 export const TableContainer = styled.div`
-  margin-top: 128px;
-  overflow-x: auto;
+  overflow-x: scroll;
+
   border-radius: 8px;
   background-color: ${({ theme }) => theme.colors.tableBackground};
   border: 1px solid ${({ theme }) => theme.colors.buttonBorder};
+  height: calc(100vh - 180px);
+  @media (min-width: 1024px) {
+    overflow-x: auto;
+    height: auto;
+  }
 `;
 export const Table = styled.table`
   border: none;

@@ -9,7 +9,7 @@ export const PopoverContent = styled.div`
   border: 1px solid ${({ theme }) => theme.colors.buttonBorder};
   position: absolute;
   top: 62px;
-  right: 0;
+  left: 0;
   padding: 16px;
   display: none;
   z-index: 99;

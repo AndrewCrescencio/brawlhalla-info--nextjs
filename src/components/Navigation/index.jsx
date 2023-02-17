@@ -11,6 +11,7 @@ export const Navigation = () => {
 
   return (
     <NavigationContainer>
+      <Popover />
       <PaginationButton
         onClick={() =>
           route.push(paginationLink(bracket, region, Number(page) - 1))
@@ -27,7 +28,6 @@ export const Navigation = () => {
       >
         <IconChevronRight />
       </PaginationButton>
-      <Popover />
     </NavigationContainer>
   );
 };
