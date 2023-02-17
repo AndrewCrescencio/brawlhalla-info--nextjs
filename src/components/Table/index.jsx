@@ -9,7 +9,6 @@ import {
 } from "./styles";
 
 export const Table = ({ playersInfo }) => {
-  console.log(playersInfo);
   return (
     <TableContainer>
       <StyledTable>
