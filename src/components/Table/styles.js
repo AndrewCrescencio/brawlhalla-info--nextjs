@@ -25,7 +25,7 @@ export const Table = styled.table`
 export const TBody = styled.tbody``;
 
 export const THead = styled.thead`
-  border-top: 1px solid #35383f;
+  border-bottom: 1px solid #35383f;
 `;
 
 export const Tr = styled.tr`
