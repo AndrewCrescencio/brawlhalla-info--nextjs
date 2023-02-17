@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const NavigationContainer = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: 16px;
-  margin: 16px;
+  margin: 48px 0 16px;
 `;
 
 export const FilterWrapper = styled.div``;
