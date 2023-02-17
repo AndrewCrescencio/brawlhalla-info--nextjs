@@ -14,25 +14,22 @@ export const Filters = ({ closePopover }) => {
   const route = useRouter();
   const { bracket, region, page } = route.query;
 
-  const handleFilter = (bracket, region, page) => {
+  function handleClick(bracket, region, page) {
     closePopover();
-    const newPage = paginationLink(bracket, region, page)
-    route.push(newPage)
-  };
+    route.push(paginationLink(bracket, region, page))
+  }
 
   return (
     <FiltersContainer>
       <FilterWrapper>
-        <FilterName>Region:</FilterName>
+        <FilterName>Bracket:</FilterName>
         <FiltersButtonContainer>
-          {regions.map((filter) => {
+          {brackets.map((filter) => {
             return (
               <FilterButton
-                onClick={() =>
-                  handleFilter(paginationLink(bracket, filter, page))
-                }
+                onClick={() => handleClick(filter, region, page)}
                 key={filter}
-                selected={region === filter}
+                selected={bracket === filter}
               >
                 [{filter}]
               </FilterButton>
@@ -41,18 +38,19 @@ export const Filters = ({ closePopover }) => {
         </FiltersButtonContainer>
       </FilterWrapper>
       <FilterWrapper>
-        <FilterName>Bracket:</FilterName>
+        <FilterName>Region:</FilterName>
         <FiltersButtonContainer>
-          {brackets.map((filter) => {
+          {regions.map((filter) => {
             return (
               <FilterButton
                 onClick={() =>
-                  handleFilter(paginationLink(filter, region, page))
+                  handleClick(bracket, filter, page)
                 }
                 key={filter}
+                selected={region === filter}
               >
                 [{filter}]
-              </FilterButton>              
+              </FilterButton>
             );
           })}
         </FiltersButtonContainer>
