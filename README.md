@@ -88,7 +88,9 @@ you can request a Brawlhalla API key by sending an email to api@brawlhalla.com -
 
 ## Running the project
 
-### Development environment
+### Development version
+
+Start the development server
 
 ```sh
  npm run dev
